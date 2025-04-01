@@ -1,31 +1,18 @@
 import React from "react";
 
-const pokemonList = [
-  {
-    name: "kyogre",
-    imgSrc: "images/kyogre.png",
-    type: "Water",
-    height: "2.5m",
-    weight: "352kg"
-  },
-  {
-    name: "bulbasaur",
-    imgSrc: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png",
-    type: "Grass",
-    height: "0.7m",
-    weight: "6.9kg"
-  },
-  {
-    name: "mew",
-    imgSrc: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/151.png",
-    type: "Psychic",
-    height: "0.4m",
-  },
-];
+interface Pokemon {
+  name: string;
+  imgSrc?: string;
+  type?: string;
+  height?: string;
+  weight?: string;
+}
 
-const PokemonCard: React.FC = () => {
-  const pokemon = pokemonList[1];
+interface PokemonCardProps {
+  pokemon: Pokemon;
+}
 
+const PokemonCard: React.FC<PokemonCardProps> = ({ pokemon }) => {
   return (
     <figure>
       {pokemon.imgSrc ? (
