@@ -11,14 +11,20 @@ const pokemonList = [
   {
     name: "bulbasaur",
     imgSrc: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png",
+    type: "Grass",
+    height: "0.7m",
+    weight: "6.9kg"
   },
   {
     name: "mew",
+    imgSrc: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/151.png",
+    type: "Psychic",
+    height: "0.4m",
   },
 ];
 
 const PokemonCard: React.FC = () => {
-  const pokemon = pokemonList[2];
+  const pokemon = pokemonList[1];
 
   return (
     <figure>
