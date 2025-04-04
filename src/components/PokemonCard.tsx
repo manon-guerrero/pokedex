@@ -6,6 +6,7 @@ interface Pokemon {
   type?: string;
   height?: string;
   weight?: string;
+  description?: string;
 }
 
 interface PokemonCardProps {
@@ -25,6 +26,7 @@ const PokemonCard: React.FC<PokemonCardProps> = ({ pokemon }) => {
         <p>Type: {pokemon.type}</p>
         <p>Height: {pokemon.height}</p>
         <p>Weight: {pokemon.weight}</p>
+        <p>Description: {pokemon.description}</p>
       </figcaption>
     </figure>
   );
