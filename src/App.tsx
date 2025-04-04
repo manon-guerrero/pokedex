@@ -73,7 +73,7 @@ function App() {
 
   return (
     <div>
-      <h1>Pokemon Search</h1>
+      <h1>Pokédex</h1>
       <NavBar setPokemonName={setPokemonName} pokemonList={pokemonList} />
       <PokemonCard pokemon={pokemon} />
     </div>
